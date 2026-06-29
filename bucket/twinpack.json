@@ -5,7 +5,7 @@
     "license": "commercial",
     "architecture": {
         "64bit": {
-            "url": "https://zeugwerk.dev/download.php?tool=twinpack&version=0.0.0",
+            "url": "https://api.zeugwerk.dev/download?tool=twinpack&version=0.0.0",
             "hash": "sha256:PLACEHOLDER",
             "download_headers": {
                 "Authorization": "Bearer #{ZEUGWERK_TOKEN}#"
@@ -14,13 +14,13 @@
     },
     "bin": "twinpack.exe",
     "checkver": {
-        "url": "https://zeugwerk.dev/version.php?tool=twinpack",
+        "url": "https://api.zeugwerk.dev/version?tool=twinpack",
         "regex": "([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://zeugwerk.dev/download.php?tool=twinpack&version=$version"
+                "url": "https://api.zeugwerk.dev/download?tool=twinpack&version=$version"
             }
         }
     }

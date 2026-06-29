@@ -5,7 +5,7 @@
     "license": "commercial",
     "architecture": {
         "64bit": {
-            "url": "https://zeugwerk.dev/download.php?tool=zkmake&version=0.0.0",
+            "url": "https://api.zeugwerk.dev/download?tool=zkmake&version=0.0.0",
             "hash": "sha256:PLACEHOLDER",
             "download_headers": {
                 "Authorization": "Bearer #{ZEUGWERK_TOKEN}#"
@@ -14,13 +14,13 @@
     },
     "bin": "zkmake.exe",
     "checkver": {
-        "url": "https://zeugwerk.dev/version.php?tool=zkmake",
+        "url": "https://api.zeugwerk.dev/version?tool=zkmake",
         "regex": "([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://zeugwerk.dev/download.php?tool=zkmake&version=$version"
+                "url": "https://api.zeugwerk.dev/download?tool=zkmake&version=$version"
             }
         }
     }
