@@ -28,6 +28,23 @@ If you have cloned this repo, you can also run [`scripts/setup.ps1 -Token "<YOUR
 | zkinstall | Zeugwerk installer tool for TwinCAT PLC projects |
 | twinpack | Twinpack package manager for TwinCAT PLC libraries |
 
+## Using in a CI/CD pipeline
+
+Once the node is set up, tools are available directly in your pipeline scripts. A minimal GitLab CI example:
+
+```
+build:
+  tags: [windows]
+  script:
+    - scoop update zkmake zkdoc
+    - zkmake build --update-snapshots --kill-all
+    - zkdoc --docfx reference --output documentation .
+  artifacts:
+    paths: ["*.library", "documentation/"]
+```
+
+No download logic, no credential handling in the pipeline. Scoop handles authentication and caching transparently.
+
 ## Updating
 
 ```powershell
