@@ -46,3 +46,7 @@ scoop hold zkmake
 ```powershell
 scoop uninstall zkmake
 ```
+
+## Background
+
+For more on why we chose Scoop for on-prem TwinCAT CI/CD tool distribution and how the authentication layer works, see our [blog post](https://zeugwerk.dev/blog/distributing-devtools-with-scoop/).
