@@ -26,7 +26,6 @@ If you have cloned this repo, you can also run [`scripts/setup.ps1 -Token "<YOUR
 | zkmake | Zeugwerk build tool for TwinCAT PLC projects |
 | zkdoc | Zeugwerk documentation tool for TwinCAT PLC projects |
 | zkinstall | Zeugwerk installer tool for TwinCAT PLC projects |
-| zklicpwn | Zeugwerk license activation tool for TwinCAT |
 | twinpack | Twinpack package manager for TwinCAT PLC libraries |
 
 ## Updating
