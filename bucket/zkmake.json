@@ -4,7 +4,7 @@
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=zkmake&version=1.10.18",
+        "url": "https://api.zeugwerk.dev/download?tool=zkmake&version=1.10.18#/zkmake.tar.gz",
         "hash": "sha256:e4bdc962a45ba60a15028586e7c23321d17e3373a80758801d55cadfb926b799"
     }},
     "bin": "zkmake.exe",
