@@ -12,5 +12,5 @@
         "url": "https://api.zeugwerk.dev/version?tool=twinpack",
         "regex": "([\\d.]+)"
     },
-    "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=twinpack&version=$version"}}}
+    "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=twinpack&version=$version#/twinpack.tar.gz"}}}
 }
