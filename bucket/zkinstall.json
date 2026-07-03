@@ -12,5 +12,5 @@
         "url": "https://api.zeugwerk.dev/version?tool=zkinstall",
         "regex": "([\\d.]+)"
     },
-    "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=zkinstall&version=$version"}}}
+    "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=zkinstall&version=$version#/zkinstall.tar.gz"}}}
 }
