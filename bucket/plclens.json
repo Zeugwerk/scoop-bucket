@@ -5,7 +5,7 @@
     "license": "commercial",
     "architecture": {"64bit":     {
         "url": "https://api.zeugwerk.dev/download?tool=plclens&version=1.0.1#/plclens.tar.gz",
-        "hash": "sha256:033d3f53c78390b16eb4ff4afd22e85e217549d62f2278efbc831ac3bfac7577"
+        "hash": "sha256:043a1e8f461a26aac6f4cbecee2f2d6e2b316b20ed036fda9e8e0f7c9491bbab"
     }},
     "bin": "plclens.exe",
     "checkver":     {
