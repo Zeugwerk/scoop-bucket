@@ -1,0 +1,16 @@
+{
+    "version": "0.0.0",
+    "description": "Zeugwerk build tool for TwinCAT PLC projects",
+    "homepage": "https://zeugwerk.dev",
+    "license": "commercial",
+    "architecture": {"64bit":     {
+        "url": "https://api.zeugwerk.dev/download?tool=plclens&version=0.0.0#/plclens.tar.gz",
+        "hash": "sha256:b5a21300a3c7dc4c52ad7b644de755e0927ddb2200adc498af925c9322795360"
+    }},
+    "bin": "plclens.exe",
+    "checkver":     {
+        "url": "https://api.zeugwerk.dev/version?tool=plclens",
+        "regex": "([\\d.]+)"
+    },
+    "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plclens&version=$version#/plclens.tar.gz"}}}
+}
