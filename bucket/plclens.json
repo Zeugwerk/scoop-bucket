@@ -1,6 +1,6 @@
 {
     "version": "0.0.0",
-    "description": "Zeugwerk build tool for TwinCAT PLC projects",
+    "description": "Plclens enables AI agents to understand your TwinCAT libraries and docs, so they write against the real API, not memory.",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
