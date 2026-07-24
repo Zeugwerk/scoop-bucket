@@ -1,11 +1,11 @@
 {
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Plclens enables AI agents to understand your TwinCAT libraries and docs, so they write against the real API, not memory.",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=plclens&version=1.0.5#/plclens.tar.gz",
-        "hash": "sha256:981d51a2e5bff5ece4da367c62c6f00ecc9282c3e3bf837d51f17833cd8cfea7"
+        "url": "https://api.zeugwerk.dev/download?tool=plclens&version=1.0.6#/plclens.tar.gz",
+        "hash": "sha256:098d9fe171029c66b227c5993b08c667212cd8a2e347b01a790fd860018d6744"
     }},
     "bin": "plclens.exe",
     "checkver":     {
