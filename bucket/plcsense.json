@@ -7,7 +7,7 @@
         "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.5#/plcsense.tar.gz",
         "hash": "sha256:26e9116e745627a2407743a627c5e92d7ef8ada185e3434d5bb2f0ac0439ee70"
     }},
-    "bin": "plclens.exe",
+    "bin": "plcsense.exe",
     "checkver":     {
         "url": "https://api.zeugwerk.dev/version?tool=plcsense",
         "regex": "([\\d.]+)"
