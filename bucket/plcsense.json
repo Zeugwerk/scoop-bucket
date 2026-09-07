@@ -1,11 +1,11 @@
 {
-    "version": "1.1.21",
+    "version": "1.1.22",
     "description": "Plcsense enables AI agents to understand your TwinCAT libraries and docs, so they write against the real API, not memory.",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.21#/plcsense.tar.gz",
-        "hash": "sha256:ff81a177497d540fdf7b1850c5790bf0700131efbd39c5ab9b6f4326b2df5ed8"
+        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.22#/plcsense.tar.gz",
+        "hash": "sha256:857aa98f7429e85bf2f3c4fe02ff28302d7c1227770531349a4f5449cfeea1aa"
     }},
     "bin": "plcsense.exe",
     "checkver":     {
@@ -13,5 +13,5 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plcsense&version=$version#/plcsense.tar.gz"}}},
-    "notes": ["  - feat: support multiple solutions in the workspaceFolder as well as introduced a new field to filter in plcsense.json for solutions that plcsense should work on, [7d60d00](https://github.com/Zeugwerk/plcsense/commit/7d60d006de148027fca125aa9b743294919f8117)"]
+    "notes": ["  - feat: validator for extra semicolon, [8b4536a](https://github.com/Zeugwerk/plcsense/commit/8b4536aae3e76d461e0b9ea0fa74bba3a2668caf)"]
 }
