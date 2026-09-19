@@ -1,11 +1,11 @@
 {
-    "version": "1.1.22",
+    "version": "1.1.23",
     "description": "Plcsense enables AI agents to understand your TwinCAT libraries and docs, so they write against the real API, not memory.",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.22#/plcsense.tar.gz",
-        "hash": "sha256:857aa98f7429e85bf2f3c4fe02ff28302d7c1227770531349a4f5449cfeea1aa"
+        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.23#/plcsense.tar.gz",
+        "hash": "sha256:c3ebe35ea8a7ba212b72b8fb2f1d4e3643036deba6ffac72146e61ffeaba71bc"
     }},
     "bin": "plcsense.exe",
     "checkver":     {
@@ -13,5 +13,5 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plcsense&version=$version#/plcsense.tar.gz"}}},
-    "notes": ["  - feat: validator for extra semicolon, [8b4536a](https://github.com/Zeugwerk/plcsense/commit/8b4536aae3e76d461e0b9ea0fa74bba3a2668caf)"]
+    "notes": ["  - fix: answer MCP initialize before Keygen/WMI so Agents can always connect, [053c75e](https://github.com/Zeugwerk/plcsense/commit/053c75efeeb77bc99a68e8ad2b317dc467f9ac5e)"]
 }
