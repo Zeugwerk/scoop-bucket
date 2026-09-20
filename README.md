@@ -17,6 +17,13 @@ $c | ConvertTo-Json -Depth 10 | Set-Content $f
 scoop bucket add zeugwerk https://github.com/Zeugwerk/scoop-bucket
 ```
 
+`main` only tracks DevTools `release/*`. Builds from DevTools `main` are on the `unstable` branch:
+
+```powershell
+scoop bucket add zeugwerk-unstable https://github.com/Zeugwerk/scoop-bucket unstable
+scoop install zeugwerk-unstable/zkmake
+```
+
 If you have cloned this repo, you can also run [`scripts/setup.ps1 -Token "<YOUR_TOKEN>"`](scripts/setup.ps1) directly.
 
 ## Available Tools
@@ -26,8 +33,9 @@ If you have cloned this repo, you can also run [`scripts/setup.ps1 -Token "<YOUR
 | zkmake | Zeugwerk build tool for TwinCAT PLC projects |
 | zkdoc | Zeugwerk documentation tool for TwinCAT PLC projects |
 | zkinstall | Zeugwerk installer tool for TwinCAT PLC projects |
-| zkplaincat | Zeugwerk converter for TwinCAT PLC projects to plain Structured Text and back |
 | twinpack | Twinpack package manager for TwinCAT PLC libraries |
+
+`zkplaincat` is published from DevTools `main` only. Install it from `zeugwerk-unstable`.
 
 ## Using in a CI/CD pipeline
 
