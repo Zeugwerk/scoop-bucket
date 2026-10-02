@@ -1,0 +1,11 @@
+{
+    "version": "2.78.5",
+    "description": "DocFX static site generator for the Zeus documentation",
+    "homepage": "https://dotnet.github.io/docfx/",
+    "license": "MIT",
+    "architecture": {"64bit":     {
+        "url": "https://zeugwerk.dev/Tools/docfx-win-x64-v2.78.5.zip",
+        "hash": "sha256:64acd0d0ee66a795b701b9fa117392233db8de9f70a331702e904d90826a6aec"
+    }},
+    "bin": "docfx.exe"
+}

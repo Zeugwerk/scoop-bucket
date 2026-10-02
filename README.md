@@ -34,6 +34,7 @@ If you have cloned this repo, you can also run [`scripts/setup.ps1 -Token "<YOUR
 | zkdoc | Zeugwerk documentation tool for TwinCAT PLC projects |
 | zkinstall | Zeugwerk installer tool for TwinCAT PLC projects |
 | twinpack | Twinpack package manager for TwinCAT PLC libraries |
+| docfx | DocFX static site generator used to build the Zeus documentation |
 
 `zkplaincat` is published from DevTools `main` only. Install it from `zeugwerk-unstable`.
 
