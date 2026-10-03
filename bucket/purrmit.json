@@ -1,6 +1,6 @@
 {
     "version": "1.13.34",
-    "description": "Zeugwerk tool for TwinCAT trial licence activation and licence status",
+    "description": "TwinCAT licence status",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
