@@ -4,18 +4,14 @@ A [Scoop](https://scoop.sh) bucket for Zeugwerk DevTools.
 
 ## Setup
 
-Run the following once on each machine. Replace `<YOUR_TOKEN>` with the token provided by Zeugwerk.
+Run this once on each Windows machine. It installs Scoop when needed, registers the token, and adds this bucket. Install the tools you need afterwards. Replace `<YOUR_TOKEN>` with the token provided by Zeugwerk.
 
 ```powershell
-$Token = "<YOUR_TOKEN>"
-$f = "$HOME\.config\scoop\config.json"
-New-Item (Split-Path $f) -ItemType Directory -Force | Out-Null
-$c = if (Test-Path $f) { Get-Content $f -Raw | ConvertFrom-Json } else { [PSCustomObject]@{} }
-$e = [PSCustomObject]@{ match = "https://api.zeugwerk.dev/*"; headers = "Authorization=Bearer $Token" }
-$c.private_hosts = @(@($c.private_hosts) | Where-Object { $_ -and $_.match -ne $e.match }) + $e
-$c | ConvertTo-Json -Depth 10 | Set-Content $f
-scoop bucket add zeugwerk https://github.com/Zeugwerk/scoop-bucket
+$env:ZEUGWERK_TOKEN = "<YOUR_TOKEN>"
+irm https://zeugwerk.dev/scoop/bootstrap.ps1 | iex
 ```
+
+Then install what you need, for example `scoop install zkmake`. If you have cloned this repo, [`scripts/setup.ps1 -Token "<YOUR_TOKEN>"`](scripts/setup.ps1) runs the same script.
 
 `main` only tracks DevTools `release/*`. Builds from DevTools `main` are on the `unstable` branch:
 
@@ -23,8 +19,6 @@ scoop bucket add zeugwerk https://github.com/Zeugwerk/scoop-bucket
 scoop bucket add zeugwerk-unstable https://github.com/Zeugwerk/scoop-bucket unstable
 scoop install zeugwerk-unstable/zkmake
 ```
-
-If you have cloned this repo, you can also run [`scripts/setup.ps1 -Token "<YOUR_TOKEN>"`](scripts/setup.ps1) directly.
 
 ## Available Tools
 
