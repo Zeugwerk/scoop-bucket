@@ -1,0 +1,26 @@
+{
+    "version": "3.10",
+    "description": "Sysinternals Autologon (configure Windows AutoAdminLogon; password stored as LSA secret)",
+    "homepage": "https://learn.microsoft.com/sysinternals/downloads/autologon",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://learn.microsoft.com/sysinternals/license-terms"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://zeugwerk.dev/Tools/Autologon.zip",
+            "hash": "sha256:9a477624ea6488acfbd2cefcc392fac082383a3a8db1c6d867af1b410f4731b7"
+        }
+    },
+    "bin": [
+        [
+            "Autologon64.exe",
+            "autologon"
+        ],
+        "Autologon64.exe"
+    ],
+    "notes": [
+        "Hosted mirror: upload Autologon.zip to https://zeugwerk.dev/Tools/Autologon.zip",
+        "CLI: autologon <user> <domain> <password>  (use '.' for a local account domain)"
+    ]
+}
