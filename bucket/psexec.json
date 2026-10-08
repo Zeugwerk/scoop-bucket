@@ -1,0 +1,26 @@
+{
+    "version": "2.53",
+    "description": "PsExec from Microsoft Sysinternals (hosted PSTools zip for locked-down agents)",
+    "homepage": "https://learn.microsoft.com/sysinternals/downloads/psexec",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://learn.microsoft.com/sysinternals/license-terms"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://zeugwerk.dev/Tools/PSTools.zip",
+            "hash": "sha256:2b10b3d9dae0403b06d90b13bfb53e723a8b14a788f78cdfd43a445d8991415e"
+        }
+    },
+    "bin": [
+        [
+            "PsExec64.exe",
+            "psexec"
+        ],
+        "PsExec64.exe"
+    ],
+    "notes": [
+        "Extracted from the full PSTools toolkit at https://zeugwerk.dev/Tools/PSTools.zip",
+        "Package version follows psversion.txt in that zip (PsExec binary reports 2.43)."
+    ]
+}
