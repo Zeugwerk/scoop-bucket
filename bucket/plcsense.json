@@ -1,11 +1,11 @@
 {
-    "version": "1.1.23",
+    "version": "1.1.24",
     "description": "Plcsense enables AI agents to understand your TwinCAT libraries and docs, so they write against the real API, not memory.",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.23#/plcsense.tar.gz",
-        "hash": "sha256:c3ebe35ea8a7ba212b72b8fb2f1d4e3643036deba6ffac72146e61ffeaba71bc"
+        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.24#/plcsense.tar.gz",
+        "hash": "sha256:3a0392ffc5b0cb1303caccf7280393cfcd475e7cde923cd68e670239090f740e"
     }},
     "bin": "plcsense.exe",
     "checkver":     {
@@ -13,5 +13,16 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plcsense&version=$version#/plcsense.tar.gz"}}},
-    "notes": ["  - fix: answer MCP initialize before Keygen/WMI so Agents can always connect, [053c75e](https://github.com/Zeugwerk/plcsense/commit/053c75efeeb77bc99a68e8ad2b317dc467f9ac5e)"]
+    "notes":     [
+        "  - feat: flag a function-block call and a shadowed enum qualifier",
+        "    GETCPUCOUNTER() has to be an instance. EventName.Member is hidden when a variable has that name, while assertions : Assertions stays legal, [a95cb09](https://github.com/Zeugwerk/plcsense/commit/a95cb09f20eff42afb54b3de7aee6eb032fe506c)",
+        "  - docs: record the three new validate_plc_project rules",
+        "    Reserved member names, a method that clashes with a project POU, and a member left in the parent declaration, [0829bf7](https://github.com/Zeugwerk/plcsense/commit/0829bf7c1f093bb786fe32787e7a4a2b71811e85)",
+        "  - feat: flag a method written inside the parent TwinCAT declaration",
+        "    A finished METHOD inside the interface declaration parses as Structured Text and still does not compile, [6099cb4](https://github.com/Zeugwerk/plcsense/commit/6099cb47510b31ed50bdd5a18bc52b742e0f2281)",
+        "  - feat: flag a method whose name is also a project POU",
+        "    TwinCAT cannot tell Aggregate() the method from Aggregate the function block, [f9b28ba](https://github.com/Zeugwerk/plcsense/commit/f9b28ba9fd47c59f0af9eb9cf6d09428a643d07e)",
+        "  - feat: flag reserved words used as method and property names",
+        "    TwinCAT rejects METHOD Log and PROPERTY Action, and Pasta still parses them, [5b32036](https://github.com/Zeugwerk/plcsense/commit/5b3203659dc8bb8df03488cba3b5471c88c113d3)"
+    ]
 }
