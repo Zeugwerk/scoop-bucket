@@ -1,11 +1,11 @@
 {
-    "version": "1.7.35",
+    "version": "1.7.36",
     "description": "Twinpack package manager for TwinCAT PLC libraries",
     "homepage": "https://zeugwerk.dev",
     "license": "GPLv3",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=twinpack&version=1.7.35#/twinpack.tar.gz",
-        "hash": "sha256:a454899421844da1150feb81791fec969a885d33ca0ea41a5be84c23415a72d8"
+        "url": "https://api.zeugwerk.dev/download?tool=twinpack&version=1.7.36#/twinpack.tar.gz",
+        "hash": "sha256:5beff17ec92b297d05218d85f753b1b82828faf239b8838e1f579d53d267d45f"
     }},
     "bin": "twinpack.exe",
     "checkver":     {
