@@ -5,7 +5,7 @@
     "license": "GPLv3",
     "architecture": {"64bit":     {
         "url": "https://api.zeugwerk.dev/download?tool=twinpack&version=1.7.40#/twinpack.tar.gz",
-        "hash": "sha256:c711cbeceb0596c32e64b525ea62ba805a2d10c139eac373c746a1722cb06c56"
+        "hash": "sha256:c6585bbe5ad6e36093c8b42017c3bf031a827744ae39a08afa4f5a805a752820"
     }},
     "bin": "twinpack.exe",
     "checkver":     {
