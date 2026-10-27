@@ -1,11 +1,11 @@
 {
-    "version": "1.1.26",
+    "version": "1.1.27",
     "description": "Plcsense enables AI agents to understand your TwinCAT libraries and docs, so they write against the real API, not memory.",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.26#/plcsense.tar.gz",
-        "hash": "sha256:a344f52a0e30dda946af14a6539ea216e1738d5f619b52d035c84b85aa394ae0"
+        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.27#/plcsense.tar.gz",
+        "hash": "sha256:6530080ce471af80fb0e23d347ceb28b4daabfe82fcba6762b3fe37649c2840a"
     }},
     "bin": "plcsense.exe",
     "checkver":     {
@@ -13,5 +13,5 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plcsense&version=$version#/plcsense.tar.gz"}}},
-    "notes": ["  - feat: support multiple solutions at once, [7b88442](https://github.com/Zeugwerk/plcsense/commit/7b884427fac7437a61d06ddd9cd0be735120ee75)"]
+    "notes": ["  - feat: fbinit validation, [66c6b24](https://github.com/Zeugwerk/plcsense/commit/66c6b248f03753cb396f54f176d9cbbd9c95a584)"]
 }
