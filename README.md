@@ -8,6 +8,7 @@ Run this once on each Windows machine. It installs Scoop when needed, registers 
 
 ```powershell
 $env:ZEUGWERK_TOKEN = "<YOUR_TOKEN>"
+$env:ZEUGWERK_SCOOP_UNSTABLE = '1'
 irm https://zeugwerk.dev/scoop/bootstrap.ps1 | iex
 ```
 
