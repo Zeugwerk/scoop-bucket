@@ -1,11 +1,11 @@
 {
-    "version": "1.13.46",
+    "version": "1.13.47",
     "description": "TwinCAT licence status",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=purrmit&version=1.13.46#/purrmit.tar.gz",
-        "hash": "sha256:c7694bae0b22e3a29bdb6858b9561338e81e8d416f76005932ebdad8a144ff13"
+        "url": "https://api.zeugwerk.dev/download?tool=purrmit&version=1.13.47#/purrmit.tar.gz",
+        "hash": "sha256:88e810c6a70b3879ac1f832911771e6d38aad78a71901a957f7c75f9634daa6e"
     }},
     "bin": "purrmit.exe",
     "checkver":     {
