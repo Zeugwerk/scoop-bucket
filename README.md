@@ -28,16 +28,6 @@ scoop install zeugwerk-unstable/zkmake
 | zkmake | Zeugwerk build tool for TwinCAT PLC projects |
 | zkdoc | Zeugwerk documentation tool for TwinCAT PLC projects |
 | zkinstall | Zeugwerk installer tool for TwinCAT PLC projects |
-<<<<<<< Updated upstream
-||||||| Stash base
-| zkplaincat | Zeugwerk converter for TwinCAT PLC projects to plain Structured Text and back |
-| purrmit | Zeugwerk tool for TwinCAT trial licence activation and licence status |
-=======
-| zkplaincat | Zeugwerk converter for TwinCAT PLC projects to plain Structured Text and back |
-| purrmit | Zeugwerk tool for TwinCAT trial licence activation and licence status |
-| psexec | PsExec (Sysinternals) for interactive session tools on CI agents |
-| autologon | Sysinternals Autologon for CI desktop AutoAdminLogon |
->>>>>>> Stashed changes
 | twinpack | Twinpack package manager for TwinCAT PLC libraries |
 | docfx | DocFX static site generator used to build the Zeus documentation |
 
