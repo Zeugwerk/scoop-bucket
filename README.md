@@ -12,26 +12,14 @@ $env:ZEUGWERK_SCOOP_UNSTABLE = '1'
 irm https://zeugwerk.dev/scoop/bootstrap.ps1 | iex
 ```
 
-Then install what you need, for example `scoop install zkmake`. If you have cloned this repo, [`scripts/setup.ps1 -Token "<YOUR_TOKEN>"`](scripts/setup.ps1) runs the same script.
-
-`main` only tracks DevTools `release/*`. Builds from DevTools `main` are on the `unstable` branch:
+Then install what you need, for example
 
 ```powershell
-scoop bucket add zeugwerk-unstable https://github.com/Zeugwerk/scoop-bucket unstable
+scoop install plcsense twinpack
 scoop install zeugwerk-unstable/zkmake
 ```
 
-## Available Tools
-
-| Tool | Description |
-|------|-------------|
-| zkmake | Zeugwerk build tool for TwinCAT PLC projects |
-| zkdoc | Zeugwerk documentation tool for TwinCAT PLC projects |
-| zkinstall | Zeugwerk installer tool for TwinCAT PLC projects |
-| twinpack | Twinpack package manager for TwinCAT PLC libraries |
-| docfx | DocFX static site generator used to build the Zeus documentation |
-
-`zkplaincat` is published from DevTools `main` only. Install it from `zeugwerk-unstable`.
+The tools available to you depend on the privileges set on `<YOUR_TOKEN>`.
 
 ## Using in a CI/CD pipeline
 
