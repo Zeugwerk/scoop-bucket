@@ -1,11 +1,11 @@
 {
-    "version": "1.13.53",
+    "version": "1.13.54",
     "description": "Zeugwerk converter for TwinCAT PLC projects to plain Structured Text and back",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=zkplaincat&version=1.13.53#/zkplaincat.tar.gz",
-        "hash": "sha256:dd39e8ee6192689f675e5c289858250842b0ea87d0e0117bc97cc71871ce345d"
+        "url": "https://api.zeugwerk.dev/download?tool=zkplaincat&version=1.13.54#/zkplaincat.tar.gz",
+        "hash": "sha256:528c18aa702baaed71ed2bb7054e3656bcbf2cc3c79ffc3d32d1d2eea2d2c84a"
     }},
     "bin": "zkplaincat.exe",
     "checkver":     {
