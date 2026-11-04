@@ -1,11 +1,11 @@
 {
-    "version": "1.1.40",
+    "version": "1.1.41",
     "description": "Plcsense enables AI agents to understand your TwinCAT libraries and docs, so they write against the real API, not memory.",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.40#/plcsense.tar.gz",
-        "hash": "sha256:e273da686c9e83ba1747cd4738f0d185804b71884e7caa9b807242d027174f96"
+        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.41#/plcsense.tar.gz",
+        "hash": "sha256:c1b3ba1d71a36ff79b5919c1d3958025e59d1c758245fa4385ec758b95f5023f"
     }},
     "bin": "plcsense.exe",
     "checkver":     {
@@ -13,5 +13,5 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plcsense&version=$version#/plcsense.tar.gz"}}},
-    "notes": ["  - feat: heuristics for beckhoff infosys hardware, [87a7c89](https://github.com/Zeugwerk/plcsense/commit/87a7c8957ddf15998f683155d4b25b2fa47283d9)"]
+    "notes": ["  - fix: cursor and vscode use --root in user mcp config, which resolves to the first workspace that is opened, [139486a](https://github.com/Zeugwerk/plcsense/commit/139486a1e597386f9050fdc855dfc08d357fcbeb)"]
 }
