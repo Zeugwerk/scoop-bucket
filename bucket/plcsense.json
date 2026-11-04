@@ -1,11 +1,11 @@
 {
-    "version": "1.1.35",
+    "version": "1.1.36",
     "description": "Plcsense enables AI agents to understand your TwinCAT libraries and docs, so they write against the real API, not memory.",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.35#/plcsense.tar.gz",
-        "hash": "sha256:d4f99bf8f3f1a2b9d057ecff80b577bdf421cc2e3694638c1769611d1bf0fb10"
+        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.36#/plcsense.tar.gz",
+        "hash": "sha256:eb746d1dd0cf21d2e62bd4d70ea9200f6fafb2b168ba0cc911edc19646d27873"
     }},
     "bin": "plcsense.exe",
     "checkver":     {
@@ -13,5 +13,5 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plcsense&version=$version#/plcsense.tar.gz"}}},
-    "notes": ["  - feat: default to user scope, [21e5827](https://github.com/Zeugwerk/plcsense/commit/21e58279a47b047dda898a0e9431793895f056c1)"]
+    "notes": ["  - fix: managed library folder for TC4026, [08c7142](https://github.com/Zeugwerk/plcsense/commit/08c714276a6c242de98997d90a802e021723c7c6)"]
 }
