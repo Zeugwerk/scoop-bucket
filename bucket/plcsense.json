@@ -1,11 +1,11 @@
 {
-    "version": "1.1.39",
+    "version": "1.1.40",
     "description": "Plcsense enables AI agents to understand your TwinCAT libraries and docs, so they write against the real API, not memory.",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.39#/plcsense.tar.gz",
-        "hash": "sha256:957ed1f1451c76162d0825bdb834a66bf5ca0ded9938f0ab6a2b95980895334f"
+        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.40#/plcsense.tar.gz",
+        "hash": "sha256:e273da686c9e83ba1747cd4738f0d185804b71884e7caa9b807242d027174f96"
     }},
     "bin": "plcsense.exe",
     "checkver":     {
@@ -13,9 +13,5 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plcsense&version=$version#/plcsense.tar.gz"}}},
-    "notes":     [
-        "  - fix: mark direct and indirect implementations, [621d238](https://github.com/Zeugwerk/plcsense/commit/621d23863ab179bccb87c8e7d308052b64284356)",
-        "  - fix: prefer the exact hardware order number, [2adeda4](https://github.com/Zeugwerk/plcsense/commit/2adeda4b1107cff0dde52c5c64c697d31696bdd5)",
-        "  - fix: stop doubling namespace on reference lines, [69b8336](https://github.com/Zeugwerk/plcsense/commit/69b83369ffad6f2a04a94392b0c31519cadee7ce)"
-    ]
+    "notes": ["  - feat: heuristics for beckhoff infosys hardware, [87a7c89](https://github.com/Zeugwerk/plcsense/commit/87a7c8957ddf15998f683155d4b25b2fa47283d9)"]
 }
