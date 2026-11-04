@@ -1,11 +1,11 @@
 {
-    "version": "1.1.37",
+    "version": "1.1.38",
     "description": "Plcsense enables AI agents to understand your TwinCAT libraries and docs, so they write against the real API, not memory.",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.37#/plcsense.tar.gz",
-        "hash": "sha256:dec98b267acb9b7fdf3793abaa3f9035207c9436052cb4523684c0d3c16cbe37"
+        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.38#/plcsense.tar.gz",
+        "hash": "sha256:227bdf25e940f51a1a18f2098f52ea3c785e430b77ad961a0e24f4870a298948"
     }},
     "bin": "plcsense.exe",
     "checkver":     {
@@ -13,5 +13,13 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plcsense&version=$version#/plcsense.tar.gz"}}},
-    "notes": ["  - feat: handle llm typos, [a88eaed](https://github.com/Zeugwerk/plcsense/commit/a88eaed0d7fc17f8900880662fb77a47c5e819c2)"]
+    "notes":     [
+        "  - feat: ux for 'plcsense setup', [fbb03e7](https://github.com/Zeugwerk/plcsense/commit/fbb03e7b2a81c1784056c51583676e8e8293fb10)",
+        "  - fix: no op telemetry, [112205a](https://github.com/Zeugwerk/plcsense/commit/112205a7d987f00bf5a9f3c55f6e9a72bd2d8d2d)",
+        "  - fix: show hydration on read_plc_source text, [6a677a1](https://github.com/Zeugwerk/plcsense/commit/6a677a1455a83d7a4aa4eaab9d2ef2102193b650)",
+        "  - feat: soften the zkmake setup hint, [3a740cf](https://github.com/Zeugwerk/plcsense/commit/3a740cf346d15dc1750f145754f2667dee02a190)",
+        "  - feat: load and ensure a user plcsense.json, [769fc38](https://github.com/Zeugwerk/plcsense/commit/769fc385f899faed3c373e9019cac069a8792e59)",
+        "  - feat: default library hydration to full, [889495f](https://github.com/Zeugwerk/plcsense/commit/889495fbbbf36abff2d9865c771ad5e1cd1bea1e)",
+        "  - fix: library source steers when bodies exist, [1c356c9](https://github.com/Zeugwerk/plcsense/commit/1c356c9c5f0091d4c82d5df5184545bd241786fa)"
+    ]
 }
