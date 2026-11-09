@@ -1,11 +1,11 @@
 {
-    "version": "1.1.41",
+    "version": "1.1.42",
     "description": "Plcsense enables AI agents to understand your TwinCAT libraries and docs, so they write against the real API, not memory.",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.41#/plcsense.tar.gz",
-        "hash": "sha256:c1b3ba1d71a36ff79b5919c1d3958025e59d1c758245fa4385ec758b95f5023f"
+        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.42#/plcsense.tar.gz",
+        "hash": "sha256:87682e274e986f55db5bbc11fa4638df01e70fc94b20240c8cb6dbe278d5bfa9"
     }},
     "bin": "plcsense.exe",
     "checkver":     {
@@ -13,5 +13,5 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plcsense&version=$version#/plcsense.tar.gz"}}},
-    "notes": ["  - fix: cursor and vscode use --root in user mcp config, which resolves to the first workspace that is opened, [139486a](https://github.com/Zeugwerk/plcsense/commit/139486a1e597386f9050fdc855dfc08d357fcbeb)"]
+    "notes": ["  - feat: also check enum fields for reserved keywords, [345352c](https://github.com/Zeugwerk/plcsense/commit/345352ce75300a35d2b40838971f05d3eaf74e7e)"]
 }
