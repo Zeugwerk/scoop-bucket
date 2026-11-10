@@ -1,11 +1,11 @@
 {
-    "version": "1.1.47",
+    "version": "1.1.48",
     "description": "Plcsense enables AI agents to understand your TwinCAT libraries and docs, so they write against the real API, not memory.",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.47#/plcsense.tar.gz",
-        "hash": "sha256:d9fd6ddc608d8772711134fe763fc3f81346c58f2644e4a4d2c1897e772e8e72"
+        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.48#/plcsense.tar.gz",
+        "hash": "sha256:649a5bc515aef0d2285f3376c2bd7ba81f53e0971c8ab60726377d34f346d700"
     }},
     "bin": "plcsense.exe",
     "checkver":     {
@@ -13,5 +13,9 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plcsense&version=$version#/plcsense.tar.gz"}}},
-    "notes": ["  - fix: improve installer error handling, [8e08fc0](https://github.com/Zeugwerk/plcsense/commit/8e08fc0f4215278a84d03bc8e14854d55361b7a8)"]
+    "notes":     [
+        "  - feat: install.ps1 does not play nicely with InnoSetup installers, [3fdb7ea](https://github.com/Zeugwerk/plcsense/commit/3fdb7eade305fa7a81c1ea3feae9d3b79c67429d)",
+        "  - feat: linux and macos support, [0c37234](https://github.com/Zeugwerk/plcsense/commit/0c3723494059111ae369a82630b269e13780e98a)",
+        "  - feat: linux and macos support, [62f7a4d](https://github.com/Zeugwerk/plcsense/commit/62f7a4ded6ab8d3b8aaad2e4aaf5018c93dfc617)"
+    ]
 }
