@@ -1,11 +1,11 @@
 {
-    "version": "1.1.50",
+    "version": "1.1.51",
     "description": "Plcsense enables AI agents to understand your TwinCAT libraries and docs, so they write against the real API, not memory.",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.50#/plcsense.tar.gz",
-        "hash": "sha256:7a22e6703885fd2a05e13e2cc94c5a2624c0da2dd04cf602eae259cae76b22f6"
+        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.51#/plcsense.tar.gz",
+        "hash": "sha256:1f56ba71916702744807d8b27922072c5a72192db6b712596d4265037569e046"
     }},
     "bin": "plcsense.exe",
     "checkver":     {
@@ -13,8 +13,5 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plcsense&version=$version#/plcsense.tar.gz"}}},
-    "notes":     [
-        "  - feat: inset logo in installer, [c4ed060](https://github.com/Zeugwerk/plcsense/commit/c4ed06020ffbc5ddd3d0acfdf13bdeeafb9eb2b5)",
-        "  - fix: installer doesnt complain if license activation failed, [900294b](https://github.com/Zeugwerk/plcsense/commit/900294bce5dd4384a2bc045e2e719b5bf84abe73)"
-    ]
+    "notes": ["  - feat: improve installer flow, [429b09e](https://github.com/Zeugwerk/plcsense/commit/429b09eaf3af8b19e7c6f37c9b4af27aa71dbe6b)"]
 }
