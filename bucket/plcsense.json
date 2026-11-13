@@ -1,16 +1,17 @@
 {
-    "version": "1.1.49",
+    "version": "1.1.50",
     "description": "Plcsense enables AI agents to understand your TwinCAT libraries and docs, so they write against the real API, not memory.",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.49#/plcsense.tar.gz",
-        "hash": "sha256:79d8a8b73bfbc9cc9576feb62e8a21f2eae974091b211ccb80051b1c5728b2ce"
+        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.50#/plcsense.tar.gz",
+        "hash": "sha256:f7822df388b1066ca82c67763f3caad6039fe230b975d3969840e900081fcac0"
     }},
     "bin": "plcsense.exe",
     "checkver":     {
         "url": "https://api.zeugwerk.dev/version?tool=plcsense",
         "regex": "([\\d.]+)"
     },
-    "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plcsense&version=$version#/plcsense.tar.gz"}}}
+    "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plcsense&version=$version#/plcsense.tar.gz"}}},
+    "notes": ["  - fix: installer doesnt complain if license activation failed, [900294b](https://github.com/Zeugwerk/plcsense/commit/900294bce5dd4384a2bc045e2e719b5bf84abe73)"]
 }
