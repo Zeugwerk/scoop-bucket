@@ -5,7 +5,7 @@
     "license": "commercial",
     "architecture": {"64bit":     {
         "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.1.50#/plcsense.tar.gz",
-        "hash": "sha256:f7822df388b1066ca82c67763f3caad6039fe230b975d3969840e900081fcac0"
+        "hash": "sha256:7a22e6703885fd2a05e13e2cc94c5a2624c0da2dd04cf602eae259cae76b22f6"
     }},
     "bin": "plcsense.exe",
     "checkver":     {
@@ -13,5 +13,8 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plcsense&version=$version#/plcsense.tar.gz"}}},
-    "notes": ["  - fix: installer doesnt complain if license activation failed, [900294b](https://github.com/Zeugwerk/plcsense/commit/900294bce5dd4384a2bc045e2e719b5bf84abe73)"]
+    "notes":     [
+        "  - feat: inset logo in installer, [c4ed060](https://github.com/Zeugwerk/plcsense/commit/c4ed06020ffbc5ddd3d0acfdf13bdeeafb9eb2b5)",
+        "  - fix: installer doesnt complain if license activation failed, [900294b](https://github.com/Zeugwerk/plcsense/commit/900294bce5dd4384a2bc045e2e719b5bf84abe73)"
+    ]
 }
