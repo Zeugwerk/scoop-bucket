@@ -7,8 +7,8 @@ A [Scoop](https://scoop.sh) bucket for Zeugwerk DevTools.
 Run this once on each Windows machine. It installs Scoop when needed, registers the token, and adds this bucket. Install the tools you need afterwards. Replace `<YOUR_TOKEN>` with the token provided by Zeugwerk.
 
 ```powershell
-$env:ZEUGWERK_TOKEN = "<YOUR_TOKEN>"
-$env:ZEUGWERK_SCOOP_UNSTABLE = '1'
+$env:ZEUGWERK_TOKEN = "<YOUR_TOKEN>" # only needed for first time setup
+$env:ZEUGWERK_SCOOP_UNSTABLE = '1'   # optional to install the unstable bucket as well
 irm https://zeugwerk.dev/scoop/bootstrap.ps1 | iex
 ```
 
