@@ -1,11 +1,11 @@
 {
-    "version": "1.15.8",
+    "version": "1.15.9",
     "description": "Zeugwerk build tool for TwinCAT PLC projects",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=zkmake&version=1.15.8#/zkmake.tar.gz",
-        "hash": "sha256:86fd66b67bebb87fc7df13e551404b7be0d543665f0333e6cba8a7289c5a1496"
+        "url": "https://api.zeugwerk.dev/download?tool=zkmake&version=1.15.9#/zkmake.tar.gz",
+        "hash": "sha256:3dae01726e5f221de4a3bffc81afbdb3ffcb816006859dae21f1e9321d51d067"
     }},
     "bin": "zkmake.exe",
     "checkver":     {
