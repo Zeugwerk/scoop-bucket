@@ -1,11 +1,11 @@
 {
-    "version": "1.15.12",
+    "version": "1.15.13",
     "description": "Zeugwerk documentation tool for TwinCAT PLC projects",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=zkdoc&version=1.15.12#/zkdoc.tar.gz",
-        "hash": "sha256:949e405f7f181398e4affdc81669324ac8da5bbb0477aa2ed87ffe2fc09db340"
+        "url": "https://api.zeugwerk.dev/download?tool=zkdoc&version=1.15.13#/zkdoc.tar.gz",
+        "hash": "sha256:c3e486365528fd422e1d5926bd79e17e71fe6447d082b1a68bca5853dbb98257"
     }},
     "bin": "zkdoc.exe",
     "checkver":     {
