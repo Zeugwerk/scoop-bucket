@@ -1,11 +1,11 @@
 {
-    "version": "1.15.15",
+    "version": "1.15.16",
     "description": "Zeugwerk installer tool for TwinCAT PLC projects",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=zkinstall&version=1.15.15#/zkinstall.tar.gz",
-        "hash": "sha256:599ae53bf667f37e8b4849c6f50cb8b97851a3b29dc9ffc5384f31e3acf5a100"
+        "url": "https://api.zeugwerk.dev/download?tool=zkinstall&version=1.15.16#/zkinstall.tar.gz",
+        "hash": "sha256:9f25d022a237401cdf9782c749626a7535e5f2aff1b941147a1188e500e65567"
     }},
     "bin": "zkinstall.exe",
     "checkver":     {
