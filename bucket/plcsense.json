@@ -1,16 +1,30 @@
 {
-    "version": "1.4.1",
+    "version": "1.4.2",
     "description": "Plcsense enables AI agents to understand your TwinCAT libraries and docs, so they write against the real API, not memory.",
     "homepage": "https://zeugwerk.dev",
     "license": "commercial",
     "architecture": {"64bit":     {
-        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.4.1#/plcsense.tar.gz",
-        "hash": "sha256:9f236a1951c071b55ac8b9dcaa94d8b34b9c348b16fb51861791fa256d0d91e5"
+        "url": "https://api.zeugwerk.dev/download?tool=plcsense&version=1.4.2#/plcsense.tar.gz",
+        "hash": "sha256:51a4b7e02ee79667c10f42d58f82e0ff901562803637ec9a65a76130ab1bf0e8"
     }},
     "bin": "plcsense.exe",
     "checkver":     {
         "url": "https://api.zeugwerk.dev/version?tool=plcsense",
         "regex": "([\\d.]+)"
     },
-    "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plcsense&version=$version#/plcsense.tar.gz"}}}
+    "autoupdate": {"architecture": {"64bit": {"url": "https://api.zeugwerk.dev/download?tool=plcsense&version=$version#/plcsense.tar.gz"}}},
+    "notes":     [
+        "  - fix: plcsense in TwinCAT CoAgent follows the solution open in XAE",
+        "    CoAgent starts its add-on servers once, often before XAE has opened the",
+        "    solution, and passes --active_solution only when one was open then; it never",
+        "    restarts them when the solution changes. plcsense then worked on CoAgent's own",
+        "    python folder, found no .sln and did not recognise CoAgent as the host",
+        "    Under CoAgent, plcsense now asks the XAE shell which solution is open, over the",
+        "    local endpoint CoAgent provides to its add-ons. Before a tool call (at most every",
+        "    2 s, 2 s timeout) it reads which TwinCAT projects are loaded and takes the folder",
+        "    of the .sln that names one as the root. That root ranks after client roots and",
+        "    before --active_solution; when XAE does not answer, the last answer stays. The",
+        "    same endpoint also marks CoAgent as the host, so plcsense's Infosys lookups are",
+        "    off there even without --active_solution, [1fb70f6](https://github.com/Zeugwerk/plcsense/commit/1fb70f6329c2884b76820d2b3e24c373a708b032)"
+    ]
 }
